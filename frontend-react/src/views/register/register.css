@@ -1,0 +1,9 @@
+.form-container-login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group {
+    padding-bottom: 30px;
+}

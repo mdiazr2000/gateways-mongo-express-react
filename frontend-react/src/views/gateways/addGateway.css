@@ -1,0 +1,5 @@
+.form-container-add-gateway {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

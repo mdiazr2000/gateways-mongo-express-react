@@ -1,0 +1,470 @@
+{
+	"info": {
+		"_postman_id": "ddc1adec-37a3-4095-aaa4-32e7648a66ea",
+		"name": "BL",
+		"description": "Collection for BL test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\" : \"Mary\",\r\n    \"last_name\" : \"Diaz\",\r\n    \"email\": \"mdiazr20042@gmail.com\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"mdiazr20042@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Gateway",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDMzOTkyMDMsImV4cCI6MTY0MzQwNjQwM30.O1yYz_7zpb4aDPVdSrsTsxLNSJymvfaufIM73ryNw2o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"serial_number\" : \"marianeladiazrosales456\",\r\n    \"name\": \"asasd\",\r\n    \"ip_address\" : \"127.0.0.1\",\r\n    \"devices\" : [\r\n        {\r\n            \"uid_number\" : \"sadsdf\",\r\n            \"vendor\": \"sdfsdf\",\r\n            \"date_created\": \"2022-01-27\",\r\n            \"status\" : \"online\"\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/register-gateway",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"register-gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register Gateway Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDMzOTkyMDMsImV4cCI6MTY0MzQwNjQwM30.O1yYz_7zpb4aDPVdSrsTsxLNSJymvfaufIM73ryNw2o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"serial_number\" : \"marianeladiazrosales456\",\r\n    \"name\": \"asasd\",\r\n    \"ip_address\" : \"127.0.0.1\",\r\n    \"devices\" : [\r\n        {\r\n            \"uid_number\" : \"sadsdf\",\r\n            \"vendor\": \"sdfsdf\",\r\n            \"date_created\": \"2022-01-27\",\r\n            \"status\" : \"online\"\r\n        }\r\n    ]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/register-gateway",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"register-gateway"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Gateway",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MjE1MTUsImV4cCI6MTY0MzQyODcxNX0.be32XcuDnj-ms6LiFP26sRwnRf8g6RSsanJdVhHKxQ4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {   \r\n    \"serial_number\" : \"marianeladiazrosales456\",\r\n    \"name\": \"Mary Diaz Rosale\",\r\n    \"ip_address\" : \"127.0.0.1\",\r\n    \"devices\" : [\r\n        {\r\n            \"uid_number\" : \"sadsdf\",\r\n            \"vendor\": \"sdfsdf\",\r\n            \"date_created\": \"2022-01-27\",\r\n            \"status\" : \"online\"\r\n        }\r\n    ]\r\n\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/update-gateway/61f44b7243f0c2b8eed42d8f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"update-gateway",
+						"61f44b7243f0c2b8eed42d8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Device to Gateway",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MjIxMjksImV4cCI6MTY0MzQyOTMyOX0.fXRydmEMqnIxcAiFehAiCGRiQ0gQwL03gYLvYjFPEqY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"uid_number\" : \"sadsdf\",\r\n            \"vendor\": \"sdfsdf\",\r\n            \"date_created\": \"2022-01-27\",\r\n            \"status\" : \"online\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/add-device-to-gateway/61f44b7243f0c2b8eed42d8f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"add-device-to-gateway",
+						"61f44b7243f0c2b8eed42d8f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Gateway",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MjM1MzcsImV4cCI6MTY0MzQzMDczN30.txTo_JCnb25BFof2OPwDH9bQ88IuqUHFV7yOpw4BnOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/delete-gateway/61f42fd1c622658761760729",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"delete-gateway",
+						"61f42fd1c622658761760729"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List all Gateways",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MjM1MzcsImV4cCI6MTY0MzQzMDczN30.txTo_JCnb25BFof2OPwDH9bQ88IuqUHFV7yOpw4BnOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/gateways",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"gateways"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Devices By Gateways",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MjM1MzcsImV4cCI6MTY0MzQzMDczN30.txTo_JCnb25BFof2OPwDH9bQ88IuqUHFV7yOpw4BnOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/gateway/61f44b7243f0c2b8eed42d8f/devices",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"gateway",
+						"61f44b7243f0c2b8eed42d8f",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Device",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MjM1MzcsImV4cCI6MTY0MzQzMDczN30.txTo_JCnb25BFof2OPwDH9bQ88IuqUHFV7yOpw4BnOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/gateway/61f44b7243f0c2b8eed42d8f/remove-device/61f4a1fd9ac4fa5ccf514b2f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"gateway",
+						"61f44b7243f0c2b8eed42d8f",
+						"remove-device",
+						"61f4a1fd9ac4fa5ccf514b2f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Device",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFlOWU0Yjg1ZTY0ZTM5ZGVkZWZmZGJiIiwiZW1haWwiOiJtZGlhenIyMDA0MkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MjM1MzcsImV4cCI6MTY0MzQzMDczN30.txTo_JCnb25BFof2OPwDH9bQ88IuqUHFV7yOpw4BnOY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"uid_number\" : \"sadsdf\",\r\n            \"vendor\": \"sdfsdf\",\r\n            \"date_created\": \"2022-01-27\",\r\n            \"status\" : \"online\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:4001/api/gateway/61f44b7243f0c2b8eed42d8f/edit-device/61f4a1fd9ac4fa5ccf514b2f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"gateway",
+						"61f44b7243f0c2b8eed42d8f",
+						"edit-device",
+						"61f4a1fd9ac4fa5ccf514b2f"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
